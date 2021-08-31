@@ -27,12 +27,11 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public Role saveRole(Role role) {
-		return null;
+		return roleRepo.save(role);
 	}
 
 	@Override
 	public void addRoleToUser(String username, String roleName) {
-		// TODO Auto-generated method stub
 		
 	}
 
