@@ -10,7 +10,6 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
 
 import io.getarrays.userservice.filter.CustomAuthenticationFilter;
 import lombok.RequiredArgsConstructor;
@@ -21,7 +20,6 @@ import lombok.RequiredArgsConstructor;
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	
 	private final UserDetailsService userDetailsService;
-	
 	private final BCryptPasswordEncoder bCryptPasswordEncoder;
 	
 	@Override
